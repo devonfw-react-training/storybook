@@ -1,0 +1,35 @@
+import { Meta, Story } from "@storybook/addon-docs/blocks";
+import { Button } from "./Button";
+
+<Meta title="Example/ButtonMDX" component={Button} />
+
+export const Template = (args) => <Button primary label="primary"></Button>;
+
+# Buttons
+
+Buttons are used to trigger actions within an application.
+
+## Usage
+
+Buttons are used to trigger internal actions within your web applications.
+
+## Primary Buttons
+
+Primary buttons are used as a call to action and indicate the most important action on a page.
+
+<Story
+  name="primary"
+  args={{
+    variant: "primary",
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+## Secondary Buttons
+
+Primary buttons are used as a call to action and indicate the most important action on a page.
+
+<Story name="secondary">
+  <Button label="secondary"></Button>
+</Story>
